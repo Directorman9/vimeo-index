@@ -1,4 +1,4 @@
-from flask import Flask, request, session, render_template, jsonify, url_for, make_response, redirect, flash
+from flask import Flask, request, render_template, jsonify, url_for, make_response, redirect, flash
 from dotenv import load_dotenv
 from tools import queryIndex, updateIndex
 import os, requests 
@@ -8,9 +8,7 @@ application = Flask(__name__)
 
 load_dotenv()
 application.config['SECRET_KEY'] = os.environ.get("FLASK_SECRET_KEY")
-application.config["SESSION_TYPE"] =  os.environ.get("SESSION_TYPE")
-application.config["SESSION_FILE_DIR"] = os.environ.get("SESSION_DIR")
-application.config["SESSION_PERMANENT"] = False #destroy session when browser closes
+
 
 
 @application.route('/', methods=['GET'])
