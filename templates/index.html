@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <title>VIZ-ENGINE</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+
+    <link rel="icon" href="/static/images/logo_green.png">
+    <link rel="stylesheet" type="text/css" href="/static/shared/fontawesome5.12.0/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/static/shared/MDB4.11.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/static/shared/MDB4.11.0/css/mdb.min.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/shared.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/index.css">
+
+</head>
+
+<body>
+    <div id="home-container">       
+        <div id="home-header">
+             <span>Viz Engine</span>
+             <a href="update" class="buttn fwhite bgorange custom-width"> update index </a>
+        </div>
+
+
+        <div id="home-body">   
+
+            <form class="centered" method="POST" action="/search">
+                  {% with messages = get_flashed_messages(with_categories=true) %}
+                  {% if messages %}
+                  {% for category, message in messages %}
+                     <div class="centered padded bolded {{category}}">
+                          {{ message }}
+                     </div>
+                  {% endfor %}
+                  {% endif %}
+                  {% endwith %}
+                   
+                  <input  type="text" class="half-width" placeholder="search" name="query" required></input>
+                  <input type="submit" style="position: absolute; left: -9999px"/>
+            </form>
+
+        
+
+        </div>  
+
+        <div id="home-footer" class="centered small">
+           <span class="fwhite">&copy; 2021 Annette Rohn</span>
+        </div>           
+     </div>
+                    
+</body>
+</html>
+
