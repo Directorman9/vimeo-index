@@ -1,5 +1,5 @@
 # vimeo-index
-Vimeo like other social video platforms, have nice search fuctionalities. One can search for a video by video name, descriptions or tags. As you can see, these search tools are limited. What if we wish to search for a video in which a particular word or phase is uttered inside the video itself? There is no easy way of doing that. That's when this vimeo indexing tool comes along.
+Vimeo like other social video platforms, has nice search functionalities. One can search for a video by video name, description or tags. As you can see, these search options are limited. What if we wish to search for a video in which a particular word or phase is uttered inside the video itself? There is no easy way of doing that. That's when this vimeo indexing tool comes along.
 
 This tool, indexes all vimeo videos of an organisation. The goal is to be able to search vimeo videos not only by the apparent text content (i.e. video title, tags and description), but also from the spoken words in the video. 
 
