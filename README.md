@@ -16,7 +16,8 @@ After cloning the repository, take the following steps to run the project.
    VIMEO_CLIENT_SECRET of your orgnisation's vimeo account client secret.
    
 4) Clone the Autosub repository from here https://github.com/abhirooptalasila/AutoSub and extract it inside the vimeo-index folder.The folders structure should look like below.
-      -vimeo-indexer
+
+       -vimeo-indexer
             - AutoSub
                 - autosub
                 - scripts
